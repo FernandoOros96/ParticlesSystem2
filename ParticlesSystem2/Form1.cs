@@ -21,7 +21,7 @@ namespace ParticlesSystem2
             g = Graphics.FromImage(bmp);
             PCT_CANVAS.Image = bmp;
             timer1.Stop();
-            numballs = 950;
+            numballs = 250;
             Balls = new List<Ball>();
             backgroundImage = Resource1.goku;
             createBalls();
@@ -41,6 +41,7 @@ namespace ParticlesSystem2
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            g.Clear(Color.Transparent);
 
             for (int i = 0; i < numballs; i++)
             {
@@ -63,9 +64,8 @@ namespace ParticlesSystem2
 
         private void drawBalls()
         {
-            g.Clear(Color.Transparent);
 
-            g.DrawImage(backgroundImage, new Rectangle(0, 0, PCT_CANVAS.Width, PCT_CANVAS.Height));
+            //g.DrawImage(backgroundImage, new Rectangle(0, 0, PCT_CANVAS.Width, PCT_CANVAS.Height));
 
             for (int i = 0; i < numballs; i++)
             {
