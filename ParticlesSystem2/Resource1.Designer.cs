@@ -63,9 +63,9 @@ namespace ParticlesSystem2 {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap fire {
+        internal static System.Drawing.Bitmap goku {
             get {
-                object obj = ResourceManager.GetObject("fire", resourceCulture);
+                object obj = ResourceManager.GetObject("goku", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace ParticlesSystem2 {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap goku {
+        internal static System.Drawing.Bitmap hame3 {
             get {
-                object obj = ResourceManager.GetObject("goku", resourceCulture);
+                object obj = ResourceManager.GetObject("hame3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

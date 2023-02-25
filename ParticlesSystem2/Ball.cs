@@ -16,20 +16,17 @@ namespace ParticlesSystem2
         public float velx, vely;
         public Color colorB;
         public int timeLive;
-        public Image texture;
 
         public Ball(Size size)
         {
             Random r = new Random();
-            sizeBallx = r.Next(20, 60);
-            sizeBally = r.Next(2, 4);
-            posXBall = r.Next(290, 440);
+            sizeBallx = r.Next(8, 30);
+            sizeBally = r.Next(4, 6);
+            posXBall = r.Next(290, 550);
             posYBall = r.Next(180, 330);
-            velx = r.Next(5, 50);
+            velx = r.Next(10, 30);
             vely = 0;
-            texture = Resource1.fire;
-            colorB = Color.FromArgb(r.Next(256), 0, 0, r.Next(256));
-            timeLive = r.Next(10, 50);
+            timeLive = r.Next(5, 12);
         }
     }
 }
